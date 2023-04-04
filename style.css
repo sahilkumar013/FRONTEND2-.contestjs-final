@@ -1,0 +1,121 @@
+body{
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  margin: 20px 50px;
+}
+
+.input-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  gap: 20px;
+  padding: 0;
+
+}
+.input-container input{
+  background-color: black;
+  border: 1px solid lightgray;
+  height: 35px;
+  padding-left: 10px;
+  width: 370px;
+  color: lightgray;
+}
+
+.icons{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap:10px
+}
+
+.table{
+  border: 1px solid lightgray;
+  width:100%;
+  border-spacing: 0;
+  min-height: 200px;
+  overflow-x: auto;
+  font-size: 14px;
+  color: lightgray;
+}
+
+th,td{
+  text-align: center;
+}
+
+th{
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  padding: 10px;
+}
+
+td{
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+tbody{
+  height: auto;
+}
+
+.search{
+  width:100%;
+  background-color: black;
+  border: 1px solid lightgray;
+  height: 35px;
+  padding: 0;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  width:100%;
+  padding-left: 10px;
+  color: lightgrey;
+}
+
+.button :hover{
+  cursor: pointer;
+}
+
+.button button{
+  font-weight: bold;
+  height: 35px;
+  width: 480px;
+  margin: 40px 40px 40px 0px;
+  margin-top: 30px;
+}
+
+/* For screens smaller than 800px */
+@media (max-width: 800px) {
+  /* CSS styles here */
+  body {
+    font-size: 14px;
+  }
+  .container {
+    margin: 10px;
+    overflow-x: hidden;
+  }
+  .input-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 10px;
+  }
+  .input-container input {
+    width: 100%;
+  }
+  .table {
+    font-size: 10px;
+  }
+  .search, .button button {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
